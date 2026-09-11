@@ -194,7 +194,7 @@
             <h3>Sumário</h3>
             <ul>
                 <li><a href="#dados-locais">1. Dados no Dispositivo</a></li>
-                <li><a href="#publicidade">2. Publicidade: versão atual e prevista</a></li>
+                <li><a href="#publicidade">2. Publicidade por versão</a></li>
                 <li><a href="#assinaturas">3. Recursos Premium e Assinaturas</a></li>
                 <li><a href="#consultas-api">4. Consultas de Resultados</a></li>
                 <li><a href="#notificacoes">5. Notificações no Aparelho</a></li>
@@ -216,18 +216,18 @@
         </section>
 
         <section id="publicidade">
-            <h2>2. Publicidade: versão atual e modelo previsto</h2>
-            <p><strong>Versão atual de teste (1.0.2, código 3):</strong> o aplicativo ainda não integra o SDK de anúncios. Não há exibição nem coleta pelo AdMob nessa versão, seja no uso gratuito ou Premium.</p>
-            <p><strong>Modelo previsto para a versão com publicidade:</strong> a modalidade gratuita incluirá a exibição de anúncios pelo Google AdMob para financiar o aplicativo e gerar receita para o desenvolvedor. Os usuários não receberão recompensa por visualizar anúncios. Usuários com Premium ativo não terão anúncios. A publicidade depende de uma atualização do aplicativo e ainda não está disponível no pacote de teste acima.</p>
-            <p>Quando essa integração estiver disponível, o SDK de publicidade poderá tratar endereço IP (inclusive para estimar localização aproximada), identificadores do dispositivo, interações e diagnósticos para publicidade, métricas e prevenção de fraude. Isso será processamento por terceiros e não uma cópia dos jogos ou do perfil local em servidor do desenvolvedor.</p>
-            <p>A implementação deverá respeitar as escolhas de privacidade e solicitar consentimento quando aplicável. A versão correspondente desta política e as declarações de Segurança dos dados serão revisadas antes de disponibilizar anúncios. Os controles do identificador de publicidade no Android não eliminam necessariamente todo tratamento técnico realizado pelo provedor.</p>
+            <h2>2. Publicidade por versão</h2>
+            <p><strong>Versão de teste 1.0.2 (código 3):</strong> o aplicativo ainda não integra o SDK de anúncios. Não há exibição nem coleta pelo AdMob nessa versão, seja no uso gratuito ou Premium.</p>
+            <p><strong>Versão 1.0.3 (código 4), em preparação:</strong> a modalidade gratuita integra banners e anúncios intersticiais pelo Google AdMob para financiar o aplicativo e gerar receita para o desenvolvedor. Os usuários não receberão recompensa por visualizar anúncios. Usuários com Premium ativo não terão anúncios. A publicidade depende de uma atualização do aplicativo e ainda não está disponível no pacote de teste acima.</p>
+            <p>Na versão com anúncios, o SDK de publicidade poderá tratar endereço IP (inclusive para estimar localização aproximada), identificadores do dispositivo, interações e diagnósticos para publicidade, métricas e prevenção de fraude. Isso será processamento por terceiros e não uma cópia dos jogos ou do perfil local em servidor do desenvolvedor.</p>
+            <p>A integração utiliza a plataforma de consentimento do Google (UMP). As solicitações de anúncios dependem da permissão indicada por essa plataforma e da confirmação de que não há assinatura Premium ativa. Quando aplicável, o usuário poderá rever suas escolhas em Usuário, na opção de privacidade dos anúncios. As declarações de Segurança dos dados serão revisadas antes da distribuição desta versão. Os controles do identificador de publicidade no Android não eliminam necessariamente todo tratamento técnico realizado pelo provedor.</p>
             <p>Referências: <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a> e <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">tratamento de dados pelo SDK de anúncios</a>.</p>
         </section>
         <section id="assinaturas">
             <h2>3. Recursos Premium e Assinaturas</h2>
             <p>O SorteIA oferece uma modalidade <strong>Premium</strong> mediante assinatura dentro do aplicativo, processada pelo <strong>Google Play Billing</strong>.</p>
             <ul>
-                <li><strong>Isenção de Anúncios:</strong> No modelo previsto, assinantes Premium não receberão anúncios. A versão atual de teste ainda não exibe publicidade para nenhum usuário. A ausência de anúncios não elimina as consultas de assinatura ao Google Play nem as consultas de resultados aos serviços externos.</li>
+                <li><strong>Isenção de Anúncios:</strong> Na versão 1.0.3, assinantes Premium não recebem anúncios. A versão 1.0.2 não exibe publicidade para nenhum usuário. A ausência de anúncios não elimina as consultas de assinatura ao Google Play nem as consultas de resultados aos serviços externos.</li>
                 <li><strong>Acesso Ampliado:</strong> A assinatura libera funcionalidades avançadas de organização e análise no aplicativo.</li>
                 <li><strong>Dados Financeiros:</strong> O desenvolvedor <strong>não tem acesso</strong> a números de cartão de crédito, senhas da conta Google ou dados de PIX. Todas as transações financeiras são administradas e mantidas estritamente pela Google Play Store.</li>
                 <li><strong>Cancelamento:</strong> O cancelamento de assinaturas deve ser realizado diretamente no aplicativo da <em>Google Play Store &gt; Menu do Perfil &gt; Pagamentos e assinaturas &gt; Assinaturas</em>.</li>
@@ -301,3 +301,4 @@
     </main>
 </body>
 </html>
+

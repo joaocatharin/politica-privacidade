@@ -181,7 +181,7 @@
     <main class="container">
         <header>
             <h1>Política de Privacidade — SorteIA</h1>
-            <p class="meta-info"><strong>Última Atualização:</strong> 10 de setembro de 2026</p>
+            <p class="meta-info"><strong>Última Atualização:</strong> 11 de setembro de 2026</p>
             <p class="meta-info"><strong>Responsável:</strong> JF Tech — João Fábio Catharin</p>
             <p class="meta-info"><strong>Contato:</strong> <a href="mailto:jfcatharin.ti@gmail.com">jfcatharin.ti@gmail.com</a></p>
         </header>
@@ -194,7 +194,7 @@
             <h3>Sumário</h3>
             <ul>
                 <li><a href="#dados-locais">1. Dados no Dispositivo</a></li>
-                <li><a href="#publicidade">2. Publicidade (Versão Gratuita)</a></li>
+                <li><a href="#publicidade">2. Publicidade: versão atual e prevista</a></li>
                 <li><a href="#assinaturas">3. Recursos Premium e Assinaturas</a></li>
                 <li><a href="#consultas-api">4. Consultas de Resultados</a></li>
                 <li><a href="#notificacoes">5. Notificações no Aparelho</a></li>
@@ -216,22 +216,19 @@
         </section>
 
         <section id="publicidade">
-            <h2>2. Publicidade na Versão Gratuita</h2>
-            <p>A versão gratuita do SorteIA é financiada pela exibição de anúncios publicitários servidos pela rede <strong>Google AdMob</strong> (Google LLC).</p>
-            <ul>
-                <li><strong>Dados Coletados pela Rede de Anúncios:</strong> O SDK do Google AdMob pode coletar e processar automaticamente o Endereço IP, Identificadores de Publicidade do Dispositivo (Ex: AAID / Google Advertising ID), dados de interação com os anúncios e informações sobre o desempenho da rede.</li>
-                <li><strong>Finalidade:</strong> A exibição de anúncios relevantes, prevenção de fraudes e geração de métricas de visualização.</li>
-                <li><strong>Desativação de Anúncios Personalizados:</strong> O usuário pode redefinir ou desativar a personalização de anúncios diretamente nas configurações do Android em <em>Configurações &gt; Google &gt; Anúncios</em>.</li>
-                <li>Para saber mais sobre o tratamento de dados pelo provedor de anúncios, consulte a <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidade do Google</a>.</li>
-            </ul>
+            <h2>2. Publicidade: versão atual e modelo previsto</h2>
+            <p><strong>Versão atual de teste (1.0.2, código 3):</strong> o aplicativo ainda não integra o SDK de anúncios. Não há exibição nem coleta pelo AdMob nessa versão, seja no uso gratuito ou Premium.</p>
+            <p><strong>Modelo previsto para a versão com publicidade:</strong> usuários sem assinatura Premium poderão optar por assistir a anúncios recompensados pelo Google AdMob, com a recompensa informada antes de assistir; usuários com Premium ativo não terão anúncios. A publicidade depende de uma atualização do aplicativo e ainda não está disponível no pacote de teste acima.</p>
+            <p>Quando essa integração estiver disponível, o SDK de publicidade poderá tratar endereço IP (inclusive para estimar localização aproximada), identificadores do dispositivo, interações e diagnósticos para publicidade, métricas e prevenção de fraude. Isso será processamento por terceiros e não uma cópia dos jogos ou do perfil local em servidor do desenvolvedor.</p>
+            <p>A implementação deverá respeitar as escolhas de privacidade e solicitar consentimento quando aplicável. A versão correspondente desta política e as declarações de Segurança dos dados serão revisadas antes de disponibilizar anúncios. Os controles do identificador de publicidade no Android não eliminam necessariamente todo tratamento técnico realizado pelo provedor.</p>
+            <p>Referências: <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a> e <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">tratamento de dados pelo SDK de anúncios</a>.</p>
         </section>
-
         <section id="assinaturas">
             <h2>3. Recursos Premium e Assinaturas</h2>
-            <p>O SorteIA oferece uma modalidade <strong>Premium</strong> mediante assinatura ou compra dentro do aplicativo (In-App Purchases), processada de forma 100% segura pelo <strong>Google Play Billing</strong>.</p>
+            <p>O SorteIA oferece uma modalidade <strong>Premium</strong> mediante assinatura dentro do aplicativo, processada pelo <strong>Google Play Billing</strong>.</p>
             <ul>
-                <li><strong>Isenção de Anúncios:</strong> Ao assinar a versão Premium, a exibição de anúncios é completamente removida e a coleta por parceiros de publicidade é desativada no app.</li>
-                <li><strong>Acesso Ampliado:</strong> A assinatura liberta funcionalidades avançadas de organização e análise no aplicativo.</li>
+                <li><strong>Isenção de Anúncios:</strong> No modelo previsto, assinantes Premium não receberão anúncios. A versão atual de teste ainda não exibe publicidade para nenhum usuário. A ausência de anúncios não elimina as consultas de assinatura ao Google Play nem as consultas de resultados aos serviços externos.</li>
+                <li><strong>Acesso Ampliado:</strong> A assinatura libera funcionalidades avançadas de organização e análise no aplicativo.</li>
                 <li><strong>Dados Financeiros:</strong> O desenvolvedor <strong>não tem acesso</strong> a números de cartão de crédito, senhas da conta Google ou dados de PIX. Todas as transações financeiras são administradas e mantidas estritamente pela Google Play Store.</li>
                 <li><strong>Cancelamento:</strong> O cancelamento de assinaturas deve ser realizado diretamente no aplicativo da <em>Google Play Store &gt; Menu do Perfil &gt; Pagamentos e assinaturas &gt; Assinaturas</em>.</li>
             </ul>
@@ -261,17 +258,17 @@
                     </tr>
                 </tbody>
             </table>
-            <p>Essas requisições recebem metadados técnicos de conexão HTTP (como seu IP). <strong>Nenhum jogo salvo ou informação pessoal é enviada nessas consultas.</strong></p>
+            <p>Essas requisições recebem metadados técnicos de conexão HTTP (como seu IP). <strong>Não são enviados jogos salvos nem campos do perfil nessas consultas; os serviços recebem o IP e outros metadados técnicos da conexão.</strong></p>
         </section>
 
         <section id="notificacoes">
             <h2>5. Notificações no Aparelho</h2>
-            <p>Com sua permissão prévia, o app verifica novos resultados periodicamente em segundo plano e exibe alertas locais no dispositivo. Você pode alterar a frequência ou revogar a permissão a qualquer momento nas configurações do Android.</p>
+            <p>Com sua permissão prévia, o app verifica novos resultados periodicamente em segundo plano e exibe alertas locais no dispositivo. Você pode escolher os tipos de alerta em Perfil e configurações e revogar a permissão nas configurações do Android. A execução em segundo plano depende do sistema e não garante horários exatos.</p>
         </section>
 
         <section id="backup">
             <h2>6. Backup, Retenção e Perda de Dados</h2>
-            <p>O SorteIA está configurado para desativar backups automáticos e transferências diretas de banco de dados entre aparelhos via sistema.</p>
+            <p>O SorteIA está configurado para desativar backups automáticos e transferências de dados pelo sistema. Essas regras não garantem proteção contra cópias feitas fora do controle do app, nem apagam backups de versões anteriores.</p>
             <ul>
                 <li><strong>Responsabilidade do Usuário:</strong> Por não mantermos cópia dos seus jogos em nuvem, a perda, restauração ou troca do dispositivo resultará na perda definitiva do histórico local.</li>
                 <li>O desenvolvedor não possui acesso remoto para recuperar dados apagados localmente.</li>
@@ -280,9 +277,9 @@
 
         <section id="exclusao">
             <h2>7. Exclusão e Gerenciamento de Dados</h2>
-            <p>Para remover seus dados do aparelho:</p>
+            <p>A exclusão remove permanentemente jogos, histórico e preferências locais. Apagar dados ou desinstalar o aplicativo não cancela a assinatura nem exclui registros mantidos pelo Google Play. Para cancelar, use Google Play &gt; Pagamentos e assinaturas &gt; Assinaturas.</p><p>Para remover seus dados do aparelho:</p>
             <ul>
-                <li><strong>No App:</strong> Acesse <em>Perfil &gt; Configurações &gt; "Apagar todos os dados deste aparelho"</em>.</li>
+                <li><strong>No App:</strong> Acesse <em>Perfil e configurações &gt; "Apagar todos os dados deste aparelho"</em>.</li>
                 <li><strong>No Sistema Android:</strong> Acesse <em>Configurações do Celular &gt; Aplicativos &gt; SorteIA &gt; Armazenamento &gt; Limpar Dados</em>.</li>
             </ul>
         </section>

@@ -179,126 +179,51 @@
 
 <body>
     <main class="container">
-        <header>
-            <h1>Política de Privacidade — SorteIA</h1>
-            <p class="meta-info"><strong>Última Atualização:</strong> 11 de setembro de 2026</p>
-            <p class="meta-info"><strong>Responsável:</strong> JF Tech — João Fábio Catharin</p>
-            <p class="meta-info"><strong>Contato:</strong> <a href="mailto:jfcatharin.ti@gmail.com">jfcatharin.ti@gmail.com</a></p>
-        </header>
-
-        <div class="disclaimer-box">
-            <strong>Aviso Importante:</strong> O SorteIA é uma ferramenta de organização de jogos e consulta de resultados de loterias. O aplicativo <strong>não realiza apostas</strong> e <strong>não possui qualquer vínculo com a Caixa Econômica Federal</strong>. As análises históricas fornecidas pelo app possuem caráter meramente informativo e não garantem ou preveem resultados futuros.
-        </div>
-
-        <nav class="toc">
-            <h3>Sumário</h3>
-            <ul>
-                <li><a href="#dados-locais">1. Dados no Dispositivo</a></li>
-                <li><a href="#publicidade">2. Publicidade por versão</a></li>
-                <li><a href="#assinaturas">3. Recursos Premium e Assinaturas</a></li>
-                <li><a href="#consultas-api">4. Consultas de Resultados</a></li>
-                <li><a href="#notificacoes">5. Notificações no Aparelho</a></li>
-                <li><a href="#backup">6. Backup, Retenção e Perda</a></li>
-                <li><a href="#exclusao">7. Exclusão de Dados</a></li>
-                <li><a href="#lgpd">8. Seus Direitos (LGPD)</a></li>
-                <li><a href="#hospedagem">9. Informações de Hospedagem</a></li>
-            </ul>
-        </nav>
-
-        <section id="dados-locais">
-            <h2>1. Dados no Dispositivo</h2>
-            <p>Sua privacidade é priorizada pela arquitetura do aplicativo. Os jogos criados, resultados consultados, nome opcional e preferências ficam armazenados exclusivamente no banco de dados local do seu aparelho (Room).</p>
-            <ul>
-                <li><strong>Sem Cadastro Remoto:</strong> Não é necessário criar conta, informar e-mail ou definir senha para utilizar o aplicativo. Não há autenticação em nuvem nem sincronização com servidores próprios.</li>
-                <li><strong>Preservação Local:</strong> Dados e campos de perfil são mantidos apenas localmente. Senhas e respostas de recuperação antigas eventualmente presentes permanecem salvas localmente em formato de <em>hash</em>.</li>
-                <li><strong>Segurança Física:</strong> O banco de dados Room não é integralmente criptografado. A segurança das informações armazenadas depende da proteção do próprio dispositivo do usuário.</li>
-            </ul>
-        </section>
-
-        <section id="publicidade">
-            <h2>2. Publicidade por versão</h2>
-            <p><strong>Versão de teste 1.0.2 (código 3):</strong> o aplicativo ainda não integra o SDK de anúncios. Não há exibição nem coleta pelo AdMob nessa versão, seja no uso gratuito ou Premium.</p>
-            <p><strong>Versão 1.0.3 (código 4), em preparação:</strong> a modalidade gratuita integra banners e anúncios intersticiais pelo Google AdMob para financiar o aplicativo e gerar receita para o desenvolvedor. Os usuários não receberão recompensa por visualizar anúncios. Usuários com Premium ativo não terão anúncios. A publicidade depende de uma atualização do aplicativo e ainda não está disponível no pacote de teste acima.</p>
-            <p>Na versão com anúncios, o SDK de publicidade poderá tratar endereço IP (inclusive para estimar localização aproximada), identificadores do dispositivo, interações e diagnósticos para publicidade, métricas e prevenção de fraude. Isso será processamento por terceiros e não uma cópia dos jogos ou do perfil local em servidor do desenvolvedor.</p>
-            <p>A integração utiliza a plataforma de consentimento do Google (UMP). As solicitações de anúncios dependem da permissão indicada por essa plataforma e da confirmação de que não há assinatura Premium ativa. Quando aplicável, o usuário poderá rever suas escolhas em Usuário, na opção de privacidade dos anúncios. As declarações de Segurança dos dados serão revisadas antes da distribuição desta versão. Os controles do identificador de publicidade no Android não eliminam necessariamente todo tratamento técnico realizado pelo provedor.</p>
-            <p>Referências: <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a> e <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">tratamento de dados pelo SDK de anúncios</a>.</p>
-        </section>
-        <section id="assinaturas">
-            <h2>3. Recursos Premium e Assinaturas</h2>
-            <p>O SorteIA oferece uma modalidade <strong>Premium</strong> mediante assinatura dentro do aplicativo, processada pelo <strong>Google Play Billing</strong>.</p>
-            <ul>
-                <li><strong>Isenção de Anúncios:</strong> Na versão 1.0.3, assinantes Premium não recebem anúncios. A versão 1.0.2 não exibe publicidade para nenhum usuário. A ausência de anúncios não elimina as consultas de assinatura ao Google Play nem as consultas de resultados aos serviços externos.</li>
-                <li><strong>Acesso Ampliado:</strong> A assinatura libera funcionalidades avançadas de organização e análise no aplicativo.</li>
-                <li><strong>Dados Financeiros:</strong> O desenvolvedor <strong>não tem acesso</strong> a números de cartão de crédito, senhas da conta Google ou dados de PIX. Todas as transações financeiras são administradas e mantidas estritamente pela Google Play Store.</li>
-                <li><strong>Cancelamento:</strong> O cancelamento de assinaturas deve ser realizado diretamente no aplicativo da <em>Google Play Store &gt; Menu do Perfil &gt; Pagamentos e assinaturas &gt; Assinaturas</em>.</li>
-            </ul>
-        </section>
-
-        <section id="consultas-api">
-            <h2>4. Consultas de Resultados</h2>
-            <p>Para exibir as dezenas sorteadas, o aplicativo efetua requisições diretas a serviços e APIs públicas:</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Serviço</th>
-                        <th>Tipo de Domínio</th>
-                        <th>Finalidade</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Caixa Econômica Federal</td>
-                        <td>Oficial (servicebus2.caixa.gov.br)</td>
-                        <td>Fonte primária de resultados.</td>
-                    </tr>
-                    <tr>
-                        <td>APIs Alternativas</td>
-                        <td>loteriascaixa-api.herokuapp.com / brasilapi.com.br</td>
-                        <td>Fallback para disponibilidade.</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>Essas requisições recebem metadados técnicos de conexão HTTP (como seu IP). <strong>Não são enviados jogos salvos nem campos do perfil nessas consultas; os serviços recebem o IP e outros metadados técnicos da conexão.</strong></p>
-        </section>
-
-        <section id="notificacoes">
-            <h2>5. Notificações no Aparelho</h2>
-            <p>Com sua permissão prévia, o app verifica novos resultados periodicamente em segundo plano e exibe alertas locais no dispositivo. Você pode escolher os tipos de alerta em Perfil e configurações e revogar a permissão nas configurações do Android. A execução em segundo plano depende do sistema e não garante horários exatos.</p>
-        </section>
-
-        <section id="backup">
-            <h2>6. Backup, Retenção e Perda de Dados</h2>
-            <p>O SorteIA está configurado para desativar backups automáticos e transferências de dados pelo sistema. Essas regras não garantem proteção contra cópias feitas fora do controle do app, nem apagam backups de versões anteriores.</p>
-            <ul>
-                <li><strong>Responsabilidade do Usuário:</strong> Por não mantermos cópia dos seus jogos em nuvem, a perda, restauração ou troca do dispositivo resultará na perda definitiva do histórico local.</li>
-                <li>O desenvolvedor não possui acesso remoto para recuperar dados apagados localmente.</li>
-            </ul>
-        </section>
-
-        <section id="exclusao">
-            <h2>7. Exclusão e Gerenciamento de Dados</h2>
-            <p>A exclusão remove permanentemente jogos, histórico e preferências locais. Apagar dados ou desinstalar o aplicativo não cancela a assinatura nem exclui registros mantidos pelo Google Play. Para cancelar, use Google Play &gt; Pagamentos e assinaturas &gt; Assinaturas.</p><p>Para remover seus dados do aparelho:</p>
-            <ul>
-                <li><strong>No App:</strong> Acesse <em>Perfil e configurações &gt; "Apagar todos os dados deste aparelho"</em>.</li>
-                <li><strong>No Sistema Android:</strong> Acesse <em>Configurações do Celular &gt; Aplicativos &gt; SorteIA &gt; Armazenamento &gt; Limpar Dados</em>.</li>
-            </ul>
-        </section>
-
-        <section id="lgpd">
-            <h2>8. Seus Direitos (LGPD - Lei Geral de Proteção de Dados)</h2>
-            <p>Como os dados dos seus jogos são armazenados no próprio dispositivo, o exercício dos seus direitos (acesso, correção ou exclusão) é feito diretamente na interface do app. Para esclarecimento de dúvidas sobre a privacidade, entre em contato com o responsável através do e-mail: <a href="mailto:jfcatharin.ti@gmail.com">jfcatharin.ti@gmail.com</a>.</p>
-        </section>
-
-        <section id="hospedagem">
-            <h2>9. Informações de Hospedagem</h2>
-            <p>Esta página da Web está hospedada no serviço <strong>GitHub Pages</strong>. O acesso a ela gera registros técnicos normais de navegação regidos pela <a href="https://docs.github.com/pt/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">Declaração de Privacidade do GitHub</a>.</p>
-        </section>
-
-        <footer>
-            <p>&copy; 2026 JF Tech — Todos os direitos reservados.</p>
-            <p>Endereço web oficial: <a href="https://joaocatharin.github.io/politica-privacidade/">joaocatharin.github.io/politica-privacidade/</a></p>
-        </footer>
-    </main>
+<h1>Política de Privacidade — SorteIA</h1>
+<p>Última Atualização: 15 de setembro de 2026</p>
+<p>Responsável: JF Tech — João Fábio Catharin</p>
+<p>Contato: jfcatharin@gmail.com</p>
+<p>Aviso Importante: O SorteIA é uma ferramenta de organização de jogos e consulta de resultados de loterias. O aplicativo não realiza apostas e não possui qualquer vínculo com a Caixa Econômica Federal. As análises históricas fornecidas pelo app possuem caráter meramente informativo e não garantem ou preveem resultados futuros.</p>
+<h2>1. Dados no Dispositivo</h2>
+<p>Sua privacidade é priorizada pela arquitetura do aplicativo. Os jogos criados, resultados consultados, nome opcional e preferências ficam armazenados no armazenamento privado do aplicativo no aparelho (Room e preferências locais).</p>
+<p>Sem Cadastro Remoto: Não é necessário criar conta, informar e-mail ou definir senha para utilizar o aplicativo. Não há autenticação em nuvem nem sincronização com servidores próprios.</p>
+<p>Preservação Local: Dados e campos de perfil são mantidos apenas localmente. Senhas e respostas de recuperação antigas eventualmente presentes permanecem salvas localmente em formato de hash.</p>
+<p>Segurança Física: O banco de dados Room não é integralmente criptografado. A segurança das informações armazenadas depende da proteção do próprio dispositivo do usuário.</p>
+<h2>2. Publicidade</h2>
+<p>A modalidade gratuita integra banners e anúncios intersticiais pelo Google AdMob. A receita é destinada ao desenvolvedor; os usuários não recebem recompensa por visualizar anúncios. Usuários com Premium ativo não recebem anúncios.</p>
+<p>O SDK de publicidade pode tratar endereço IP (inclusive para estimar localização aproximada), identificadores do dispositivo, interações e diagnósticos para publicidade, métricas e prevenção de fraude. Esse processamento é realizado por terceiros e não corresponde ao envio dos jogos ou do perfil local a servidor do desenvolvedor.</p>
+<p>A integração utiliza a plataforma de consentimento do Google (UMP). Solicitações de anúncios dependem da permissão indicada por essa plataforma e da confirmação de que não há Premium ativo. Quando aplicável, as escolhas podem ser revistas em Usuário, nas opções de privacidade dos anúncios. Controles do identificador de publicidade do Android não eliminam necessariamente todo processamento técnico do provedor. Ativar Premium não exclui registros previamente mantidos por terceiros.</p>
+<p>Referências: <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a> e <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">tratamento de dados pelo SDK de anúncios</a>.</p>
+<h2>3. Recursos Premium e Assinaturas</h2>
+<p>O SorteIA oferece uma modalidade Premium mediante assinatura dentro do aplicativo, processada pelo Google Play Billing.</p>
+<p>Isenção de Anúncios: Assinantes com Premium ativo não recebem anúncios. A ausência de anúncios não elimina as consultas de assinatura ao Google Play nem as consultas de resultados aos serviços externos.</p>
+<p>Acesso Ampliado: A assinatura libera funcionalidades adicionais de geração, organização e análise. Há uma demonstração pública com dados fictícios em memória, sem compra e sem alteração dos jogos reais. Relatórios exportados por escolha do usuário podem permanecer no destino escolhido.</p>
+<p>Dados Financeiros: O desenvolvedor não tem acesso a números de cartão de crédito, senhas da conta Google ou dados de PIX. Todas as transações financeiras são administradas e mantidas estritamente pela Google Play Store.</p>
+<p>Cancelamento: O cancelamento de assinaturas deve ser realizado diretamente no aplicativo da Google Play Store &gt; Menu do Perfil &gt; Pagamentos e assinaturas &gt; Assinaturas.</p>
+<h2>4. Consultas de Resultados</h2>
+<p>Para exibir as dezenas sorteadas, o aplicativo efetua requisições diretas a serviços e APIs públicas:</p>
+<p>Serviço<br>Tipo de Domínio<br>Finalidade</p>
+<p>Caixa Econômica Federal<br>Oficial (servicebus2.caixa.gov.br)<br>Fonte primária de resultados.</p>
+<p>APIs Alternativas<br>loteriascaixa-api.herokuapp.com / brasilapi.com.br<br>Fallback para disponibilidade.</p>
+<p>Essas requisições recebem metadados técnicos de conexão HTTP (como seu IP). Não são enviados jogos salvos nem campos do perfil nessas consultas; os serviços recebem o IP e outros metadados técnicos da conexão.</p>
+<h2>5. Notificações no Aparelho</h2>
+<p>Com sua permissão prévia, o app verifica novos resultados periodicamente em segundo plano e exibe alertas locais no dispositivo. Você pode escolher os tipos de alerta em Perfil e configurações e revogar a permissão nas configurações do Android. A execução em segundo plano depende do sistema e não garante horários exatos.</p>
+<h2>6. Backup, Retenção e Perda de Dados</h2>
+<p>O SorteIA está configurado para desativar backups automáticos e transferências de dados pelo sistema. Essas regras não garantem proteção contra cópias feitas fora do controle do app, nem apagam backups de versões anteriores.</p>
+<p>Responsabilidade do Usuário: Por não mantermos cópia dos seus jogos em nuvem, a perda, restauração ou troca do dispositivo resultará na perda definitiva do histórico local.</p>
+<p>O desenvolvedor não possui acesso remoto para recuperar dados apagados localmente.</p>
+<h2>7. Exclusão e Gerenciamento de Dados</h2>
+<p>A exclusão remove permanentemente jogos, histórico e preferências locais. Apagar dados ou desinstalar o aplicativo não cancela a assinatura nem exclui registros mantidos pelo Google Play. Para cancelar, use Google Play &gt; Pagamentos e assinaturas &gt; Assinaturas.</p>
+<p>Para remover seus dados do aparelho:</p>
+<p>No App: Acesse Perfil e configurações &gt; &quot;Apagar todos os dados deste aparelho&quot;.</p>
+<p>No Sistema Android: Acesse Configurações do Celular &gt; Aplicativos &gt; SorteIA &gt; Armazenamento &gt; Limpar Dados.</p>
+<h2>8. Seus Direitos (LGPD - Lei Geral de Proteção de Dados)</h2>
+<p>Como os dados dos seus jogos são armazenados no próprio dispositivo, o exercício dos seus direitos (acesso, correção ou exclusão) é feito diretamente na interface do app. Para esclarecimento de dúvidas sobre a privacidade, entre em contato com o responsável através do e-mail: jfcatharin@gmail.com.</p>
+<h2>9. Informações de Hospedagem</h2>
+<p>Esta página da Web está hospedada no serviço GitHub Pages. O acesso a ela gera registros técnicos normais de navegação regidos pela <a href="https://docs.github.com/pt/site-policy/privacy-policies/github-general-privacy-statement">Declaração de Privacidade do GitHub</a>.</p>
+<p>© 2026 JF Tech — Todos os direitos reservados.</p>
+<p>Endereço web oficial: joaocatharin.github.io/politica-privacidade/</p>
+</main>
 </body>
 </html>
 
